@@ -1,0 +1,74 @@
+﻿<!--region #mainwindow-->   
+   <dx:ThemedWindow
+    x:Class="SchedulerViewsExample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:SchedulerViewsExample"
+    xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    Height="600"
+    Width="800"
+    mc:Ignorable="d"
+    DataContext="{dxmvvm:ViewModelSource local:MainViewModel}"
+    dx:ThemeManager.ThemeName="Office2016Colorful"
+    Title="MainWindow">
+
+    <Grid>
+        <dxsch:Scheduler x:Name="scheduler"
+            ActiveViewIndex="0"
+            FirstDayOfWeek="Monday"
+            GroupType="Resource">
+            <dxsch:DayView DayCount="3"
+                ResourcesPerPage="3"
+                ShowTimeIndicatorOverAppointment="True"
+                ShowWorkTimeOnly="True"
+                SnapAppointmentToCells="Never"
+                TimeIndicatorVisibility="Always"
+                TimeMarkerVisibility="TodayView">
+                <dxsch:DayView.TimeRulers>
+                    <dxsch:TimeRuler Caption="LA Time"
+                        ShowMinutes="True"
+                        TimeZone="Pacific Standard Time" />
+                </dxsch:DayView.TimeRulers>
+            </dxsch:DayView>
+            <dxsch:WorkWeekView IsActive="True"
+                ResourcesPerPage="2"
+                ShowWorkTimeOnly="True"
+                WorkDays="WorkDays" />
+            <dxsch:WeekView ResourcesPerPage="2" ShowAllDayArea="False" />
+            <dxsch:MonthView ShowDayHeaders="True"
+                ShowResourceHeaders="True"
+                WeekCount="2" />
+            <dxsch:Scheduler.DataSource>
+                <dxsch:DataSource AppointmentsSource="{Binding Appointments}" ResourcesSource="{Binding Doctors}">
+                    <dxsch:DataSource.AppointmentMappings>
+                        <dxsch:AppointmentMappings AllDay="AllDay"
+                            AppointmentId="Id"
+                            End="EndTime"
+                            LabelKey="IssueId"
+                            Location="Location"
+                            RecurrenceInfo="RecurrenceInfo"
+                            Reminder="ReminderInfo"
+                            ResourceId="DoctorId"
+                            Start="StartTime"
+                            StatusKey="PaymentStateId"
+                            Subject="PatientName"
+                            Type="Type">
+                            <dxsch:CustomFieldMapping Mapping="InsuranceNumber" Name="InsuranceNumber" />
+                            <dxsch:CustomFieldMapping Mapping="FirstVisit" Name="FirstVisit" />
+                            <dxsch:CustomFieldMapping Mapping="Notes" Name="Notes" />
+                        </dxsch:AppointmentMappings>
+                    </dxsch:DataSource.AppointmentMappings>
+                    <dxsch:DataSource.ResourceMappings>
+                        <dxsch:ResourceMappings Caption="Name" Id="Id" />
+                    </dxsch:DataSource.ResourceMappings>
+                </dxsch:DataSource>
+            </dxsch:Scheduler.DataSource>
+        </dxsch:Scheduler>
+    </Grid>
+
+</dx:ThemedWindow>
+<!--endregion #mainwindow-->
