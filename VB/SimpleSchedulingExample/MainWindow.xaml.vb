@@ -14,14 +14,14 @@ Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 
 Namespace SimpleSchedulingExample
-    ''' <summary>
-    ''' Interaction logic for MainWindow.xaml
-    ''' </summary>
-    Partial Public Class MainWindow
-        Inherits DevExpress.Xpf.Core.ThemedWindow
+	''' <summary>
+	''' Interaction logic for MainWindow.xaml
+	''' </summary>
+	Partial Public Class MainWindow
+		Inherits DevExpress.Xpf.Core.ThemedWindow
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace
