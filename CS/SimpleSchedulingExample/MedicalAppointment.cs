@@ -32,7 +32,6 @@ namespace SimpleSchedulingExample {
         public virtual DateTime EndTime { get; set; }
         public virtual string PatientName { get; set; }
         public virtual string Notes { get; set; }
-        public virtual string Subject { get; set; }
         public virtual int StatusId { get; set; }
         public virtual int CategoryId { get; set; }
         public virtual int Type { get; set; }
