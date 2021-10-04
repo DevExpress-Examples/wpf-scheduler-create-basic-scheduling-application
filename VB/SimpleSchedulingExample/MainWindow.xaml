@@ -60,27 +60,30 @@
                 </dxr:RibbonPage>
             </dxr:RibbonPageCategory>
         </dxr:RibbonControl>
-        <Grid
->
-            <dxsch:SchedulerControl x:Name="scheduler" GroupType="Resource" FirstDayOfWeek="Monday"
->
-                <dxsch:SchedulerControl.DataSource
->
-                    <dxsch:DataSource
-ResourcesSource="{Binding Doctors}" AppointmentsSource="{Binding Appointments}">
-                        <dxsch:DataSource.ResourceMappings
->
-                            <dxsch:ResourceMappings
-Caption="Name" Id="Id"/>
+        <Grid>
+            <dxsch:SchedulerControl x:Name="scheduler" GroupType="Resource" FirstDayOfWeek="Monday">
+                <dxsch:SchedulerControl.DataSource>
+                    <dxsch:DataSource ResourcesSource="{Binding Doctors}" AppointmentsSource="{Binding Appointments}">
+                        <dxsch:DataSource.ResourceMappings>
+                            <dxsch:ResourceMappings Caption="Name" Id="Id"/>
                         </dxsch:DataSource.ResourceMappings>
-                        <dxsch:DataSource.AppointmentMappings
->
+                        <dxsch:DataSource.AppointmentMappings>
                             <dxsch:AppointmentMappings
-Type="Type" StatusId="StatusId" Start="StartTime" Subject="PatientName" ResourceId="DoctorId" RecurrenceInfo="RecurrenceInfo" Reminder="ReminderInfo" LabelId="CategoryId" Location="Location" Id="Id" End="EndTime" Description="Notes" AllDay="AllDay">
-                                <dxsch:CustomFieldMapping
-Mapping="InsuranceNumber" Name="InsuranceNumber"/>
-                                <dxsch:CustomFieldMapping
-Mapping="FirstVisit" Name="FirstVisit"/>
+                                                       Type="Type"
+                                                       StatusId="StatusId"
+                                                       Start="StartTime"
+                                                       Subject="PatientName"
+                                                       ResourceId="DoctorId"
+                                                       RecurrenceInfo="RecurrenceInfo"
+                                                       Reminder="ReminderInfo"
+                                                       LabelId="CategoryId"
+                                                       Location="Location"
+                                                       Id="Id"
+                                                       End="EndTime"
+                                                       Description="Notes"
+                                                       AllDay="AllDay">
+                                <dxsch:CustomFieldMapping Mapping="InsuranceNumber" Name="InsuranceNumber"/>
+                                <dxsch:CustomFieldMapping Mapping="FirstVisit" Name="FirstVisit"/>
                             </dxsch:AppointmentMappings>
                         </dxsch:DataSource.AppointmentMappings>
                     </dxsch:DataSource>
