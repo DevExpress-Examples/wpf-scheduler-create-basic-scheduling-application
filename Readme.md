@@ -16,10 +16,22 @@
 
 <!--This example follows the <a href="http://help.devexpress.com/#WPF/CustomDocument114882">Getting Started</a> topic and demonstrates how to create a simple scheduling application using the new WPF Scheduler.-->
 
-This example shows how to create a simple scheduling application with [SchedulerControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl).
+This example shows how to create a simple scheduling application with the [SchedulerControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl).
 
 ![SimpleScheduler](images/wpfscheduler_getstartedrun129813.png)
 <br/>
+
+## Implementation Details
+
+* To create a [POCO View Model](https://docs.devexpress.com/WPF/17352/mvvm-framework/viewmodels/runtime-generated-poco-viewmodels), use the [DevExpress MVVM Framework](https://docs.devexpress.com/WPF/15112/mvvm-framework). This is a Data Model that provides data for a scheduling application.
+
+* The View Model exposes the **MedicalAppointment** and **Doctor** classes as the **ObservableCollection** type collections.
+
+* The scheduling application includes [Ribbon](https://docs.devexpress.com/WPF/120132/controls-and-libraries/scheduler/visual-elements/ribbon).
+
+* To bind to data, use the [DataSource.AppointmentsSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.AppointmentsSource) (for **MedicalAppointment** objects) and [DataSource.ResourcesSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.ResourcesSource) (for **Doctor** objects) properties.
+
+* To specify [mappings](https://docs.devexpress.com/WPF/119493/controls-and-libraries/scheduler/data-binding/mappings), use the [DataSource.AppointmentMappings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.AppointmentMappings) and [DataSource.ResourceMappings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.ResourceMappings) properties.
 ## Files to Review
 
 * [Doctor.cs](./CS/SimpleSchedulingExample/Doctor.cs) (VB: [Doctor.vb](./VB/SimpleSchedulingExample/Doctor.vb))
