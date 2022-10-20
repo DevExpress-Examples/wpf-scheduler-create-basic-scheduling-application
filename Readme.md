@@ -27,7 +27,7 @@ This example shows how to create a simple scheduling application with the [Sched
 
 * The View Model exposes the **MedicalAppointment** and **Doctor** classes as the **ObservableCollection** type collections.
 
-* The scheduling application includes [Ribbon](https://docs.devexpress.com/WPF/120132/controls-and-libraries/scheduler/visual-elements/ribbon).
+* The scheduling application includes the [Ribbon](https://docs.devexpress.com/WPF/120132/controls-and-libraries/scheduler/visual-elements/ribbon).
 
 * To bind to data, use the [DataSource.AppointmentsSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.AppointmentsSource) (for **MedicalAppointment** objects) and [DataSource.ResourcesSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.ResourcesSource) (for **Doctor** objects) properties.
 
