@@ -23,7 +23,7 @@ This example shows how to create a basic scheduling application with the [Schedu
 
 ## Implementation Details
 
-* To create a [POCO View Model](https://docs.devexpress.com/WPF/17352/mvvm-framework/viewmodels/runtime-generated-poco-viewmodels), use the [DevExpress MVVM Framework](https://docs.devexpress.com/WPF/15112/mvvm-framework). This is a Data Model that gives data for a scheduling application.
+* To create a [POCO View Model](https://docs.devexpress.com/WPF/17352/mvvm-framework/viewmodels/runtime-generated-poco-viewmodels), use the [DevExpress MVVM Framework](https://docs.devexpress.com/WPF/15112/mvvm-framework). This is a Data Model that supplies data for a scheduling application.
 
 * The View Model uses the **MedicalAppointment** and **Doctor** class instances as collections of the **ObservableCollection** type collections.
 
