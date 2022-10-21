@@ -3,12 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:dxsch="http://schemas.devexpress.com/winfx/2008/xaml/scheduling" 
-    xmlns:local="clr-namespace:SimpleSchedulingExample"
+    xmlns:simpleschedulingexample="clr-namespace:SimpleSchedulingExample"
     xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon" xmlns:dxscht="http://schemas.devexpress.com/winfx/2008/xaml/scheduling/themekeys" xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
     x:Class="SimpleSchedulingExample.MainWindow"
     Title="MainWindow" Height="800" Width="1000">
     <dx:ThemedWindow.DataContext>
-        <local:MainViewModel/>
+        <simpleschedulingexample:MainViewModel/>
     </dx:ThemedWindow.DataContext>
     <DockPanel>
         <dxr:RibbonControl Style="{DynamicResource {dxscht:SchedulerCommandBarThemeKey ResourceKey=RibbonControl}}" DockPanel.Dock="Top" dxsch:SchedulerControl.Scheduler="{Binding ElementName=scheduler}">
