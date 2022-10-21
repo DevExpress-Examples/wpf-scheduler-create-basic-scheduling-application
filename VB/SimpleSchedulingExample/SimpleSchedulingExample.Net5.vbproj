@@ -23,17 +23,17 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Scheduler.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Scheduler.CoreDesktop" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Scheduling" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2016Colorful" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="21.1.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Scheduler.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Scheduler.CoreDesktop" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Scheduling" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016Colorful" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016White" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.1.*-*" />
   </ItemGroup>
 </Project>
