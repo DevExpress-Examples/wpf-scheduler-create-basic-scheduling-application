@@ -1,16 +1,23 @@
-public class Doctor {
-    public static Doctor Create() {
-        return new Doctor();
-    }
-    public static Doctor Create(int Id, string Name) {
-        Doctor doctor = Doctor.Create();
-        doctor.Id = Id;
-        doctor.Name = Name;
-        return doctor;
-    }
+namespace SimpleSchedulingExample
+{
 
-    protected Doctor() { }
+    public class Doctor
+    {
+        public static Doctor Create()
+        {
+            return new Doctor();
+        }
+        public static Doctor Create(int Id, string Name)
+        {
+            Doctor doctor = Doctor.Create();
+            doctor.Id = Id;
+            doctor.Name = Name;
+            return doctor;
+        }
 
-    public virtual int Id { get; set; }
-    public virtual string Name { get; set; }
+        protected Doctor() { }
+
+        public virtual int Id { get; set; }
+        public virtual string Name { get; set; }
+    }
 }
