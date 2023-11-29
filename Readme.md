@@ -3,23 +3,12 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T545377)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list 
-*Files to look at*:
 
-* [Doctor.cs](./CS/SimpleSchedulingExample/Doctor.cs) (VB: [Doctor.vb](./VB/SimpleSchedulingExample/Doctor.vb))
-* [MainViewModel.cs](./CS/SimpleSchedulingExample/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/SimpleSchedulingExample/MainViewModel.vb))
-* [MainWindow.xaml](./CS/SimpleSchedulingExample/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/SimpleSchedulingExample/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/SimpleSchedulingExample/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/SimpleSchedulingExample/MainWindow.xaml.vb))
-* [MedicalAppointment.cs](./CS/SimpleSchedulingExample/MedicalAppointment.cs) (VB: [MedicalAppointment.vb](./VB/SimpleSchedulingExample/MedicalAppointment.vb))
- default file list end -->
-# Scheduler for WPF - How to create a basic scheduling application
+# Scheduler for WPF - Create a Basic Scheduling Application
 
-<!--This example follows the <a href="http://help.devexpress.com/#WPF/CustomDocument114882">Getting Started</a> topic and demonstrates how to create a simple scheduling application using the new WPF Scheduler.-->
-
-This example shows how to create a basic scheduling application with the [SchedulerControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl).
+This example creates a basic scheduling application with the [SchedulerControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.SchedulerControl).
 
 ![SimpleScheduler](images/wpfscheduler_getstartedrun129813.png)
-<br/>
 
 ## Implementation Details
 
@@ -32,6 +21,7 @@ This example shows how to create a basic scheduling application with the [Schedu
 * To bind to data, use the [DataSource.AppointmentsSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.AppointmentsSource) (for **MedicalAppointment** objects) and [DataSource.ResourcesSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.ResourcesSource) (for **Doctor** objects) properties.
 
 * To specify [mappings](https://docs.devexpress.com/WPF/119493/controls-and-libraries/scheduler/data-binding/mappings), use the [DataSource.AppointmentMappings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.AppointmentMappings) and [DataSource.ResourceMappings](https://docs.devexpress.com/WPF/DevExpress.Xpf.Scheduling.DataSource.ResourceMappings) properties.
+
 ## Files to Review
 
 * [Doctor.cs](./CS/SimpleSchedulingExample/Doctor.cs) (VB: [Doctor.vb](./VB/SimpleSchedulingExample/Doctor.vb))
@@ -50,10 +40,7 @@ This example shows how to create a basic scheduling application with the [Schedu
 
 ## More Examples
 
-* [How to: Bind Scheduler to Data using the Entity Framework Code First Approach](https://docs.devexpress.com/WPF/115305/controls-and-libraries/scheduler/examples/how-to-bind-scheduler-to-data-using-the-entity-framework-code-first-approach)
-* [How to: Customize Editing and Recurrence Dialogs](https://docs.devexpress.com/WPF/115395/controls-and-libraries/scheduler/examples/how-to-customize-editing-and-recurrence-dialogs)
-* [How to: Customize the In-Place Editor](https://docs.devexpress.com/WPF/115449/controls-and-libraries/scheduler/examples/how-to-customize-the-in-place-editor)
-
-
-
-
+* [How to: Bind Scheduler to Data using the Entity Framework Code First Approach](https://github.com/DevExpress-Examples/how-to-bind-scheduler-to-data-using-the-entity-framework-code-first-approach-t545436)
+* [WPF Scheduler - Customize the Built-In Ribbon Control](https://github.com/DevExpress-Examples/wpf-scheduler-customize-built-in-ribbon-control)
+* [How to: Customize Editing and Recurrence Dialogs](https://github.com/DevExpress-Examples/how-to-create-a-scheduling-application-which-uses-custom-editing-and-recurrence-dialog-t545486)
+* [WPF Scheduler - Implement a Custom In-Place Appointment Editor](https://github.com/DevExpress-Examples/wpf-scheduler-implement-custom-inplace-appointment-editor)
