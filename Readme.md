@@ -46,7 +46,7 @@ This example creates a basic scheduling application with the [SchedulerControl](
 * [How to: Customize Editing and Recurrence Dialogs](https://github.com/DevExpress-Examples/how-to-create-a-scheduling-application-which-uses-custom-editing-and-recurrence-dialog-t545486)
 * [WPF Scheduler - Implement a Custom In-Place Appointment Editor](https://github.com/DevExpress-Examples/wpf-scheduler-implement-custom-inplace-appointment-editor)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-scheduler-create-basic-scheduling-application&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-scheduler-create-basic-scheduling-application&~~~was_helpful=no)
 
